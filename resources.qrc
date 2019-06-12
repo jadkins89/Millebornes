@@ -1,0 +1,24 @@
+<RCC>
+    <qresource prefix="/resources">
+        <file>images/accident.jpg</file>
+        <file>images/green_light.jpg</file>
+        <file>images/end_of_limit.jpg</file>
+        <file>images/flat_tire.jpg</file>
+        <file>images/out_of_gas.jpg</file>
+        <file>images/red_light.jpg</file>
+        <file>images/speed_limit.jpg</file>
+        <file>images/gas.jpg</file>
+        <file>images/repairs.jpg</file>
+        <file>images/spare_tire.jpg</file>
+        <file>images/driving_ace.jpg</file>
+        <file>images/emergency_vehicle.jpg</file>
+        <file>images/fifty.jpg</file>
+        <file>images/fuel_tank.jpg</file>
+        <file>images/one_hundred.jpg</file>
+        <file>images/puncture_proof.jpg</file>
+        <file>images/seventy_five.jpg</file>
+        <file>images/two_hundred.jpg</file>
+        <file>images/twenty_five.jpg</file>
+        <file>images/card_back.png</file>
+    </qresource>
+</RCC>

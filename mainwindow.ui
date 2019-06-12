@@ -1,0 +1,683 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="enabled">
+   <bool>true</bool>
+  </property>
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1000</width>
+    <height>800</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Mille Bornes</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">QPushButton#dist_button_1::pressed {
+	background-color: transparent;
+}
+
+QPushButton#dist_button_1::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#dist_button_2::pressed {
+	background-color: transparent;
+}
+
+QPushButton#dist_button_2::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#dist_button_3::pressed {
+	background-color: transparent;
+}
+
+QPushButton#dist_button_3::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#dist_button_4:pressed {
+	background-color: transparent;
+}
+
+QPushButton#dist_button_4::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#dist_button_5::pressed {
+	background-color: transparent;
+}
+
+QPushButton#dist_button_5::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#safety_button_1::pressed {
+	background-color: transparent;
+}
+
+QPushButton#safety_button_1::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#safety_button_2::pressed {
+	background-color: transparent;
+}
+
+QPushButton#safety_button_2::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#safety_button_3::pressed {
+	background-color: transparent;
+}
+
+QPushButton#safety_button_3:enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#safety_button_4::pressed {
+	background-color: transparent;
+}
+
+QPushButton#safety_button_4::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}
+
+QPushButton#safety_button_5::pressed {
+	background-color: transparent;
+}
+
+QPushButton#safety_button_5::enabled {
+	border: 2px solid #008000;
+	background-color: transparent;
+	border-radius: 10px;
+}</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QGraphicsView" name="gameView">
+    <property name="geometry">
+     <rect>
+      <x>5</x>
+      <y>5</y>
+      <width>990</width>
+      <height>790</height>
+     </rect>
+    </property>
+    <property name="frameShape">
+     <enum>QFrame::HLine</enum>
+    </property>
+    <property name="frameShadow">
+     <enum>QFrame::Sunken</enum>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="readyButton">
+    <property name="geometry">
+     <rect>
+      <x>873</x>
+      <y>716</y>
+      <width>91</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Show Hand</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="handLabel">
+    <property name="geometry">
+     <rect>
+      <x>840</x>
+      <y>20</y>
+      <width>151</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player X's Hand</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_5">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>613</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player 5</string>
+    </property>
+   </widget>
+   <widget class="Line" name="line">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>150</y>
+      <width>841</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_2">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>300</y>
+      <width>841</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_3">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>450</y>
+      <width>841</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="Line" name="line_4">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>600</y>
+      <width>841</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_4">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>463</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player 4</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_3">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>313</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player 3</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_2">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>163</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player 2</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="player_1">
+    <property name="geometry">
+     <rect>
+      <x>10</x>
+      <y>10</y>
+      <width>81</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>Player 1</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="drawButton">
+    <property name="geometry">
+     <rect>
+      <x>873</x>
+      <y>690</y>
+      <width>91</width>
+      <height>32</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw</string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dist_button_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>20</y>
+      <width>525</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>No Distance Cards Played</string>
+    </property>
+    <property name="checkable">
+     <bool>false</bool>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dist_button_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>170</y>
+      <width>525</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>No Distance Cards Played</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dist_button_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>320</y>
+      <width>525</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>No Distance Cards Played</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dist_button_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>470</y>
+      <width>525</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>No Distance Cards Played</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="dist_button_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>110</x>
+      <y>620</y>
+      <width>525</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="font">
+     <font>
+      <pointsize>14</pointsize>
+      <weight>75</weight>
+      <bold>true</bold>
+     </font>
+    </property>
+    <property name="text">
+     <string>No Distance Cards Played</string>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QLabel" name="miles_traveled_1">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>140</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miles Traveled: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="miles_traveled_2">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>290</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miles Traveled: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="miles_traveled_3">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>440</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miles Traveled: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="miles_traveled_4">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>590</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miles Traveled: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="miles_traveled_5">
+    <property name="geometry">
+     <rect>
+      <x>720</x>
+      <y>740</y>
+      <width>121</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Miles Traveled: 0</string>
+    </property>
+   </widget>
+   <widget class="QLabel" name="drawLabel">
+    <property name="geometry">
+     <rect>
+      <x>880</x>
+      <y>750</y>
+      <width>91</width>
+      <height>16</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string>Draw Pile: </string>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety_button_1">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>20</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety_button_2">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>170</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety_button_3">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>320</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety_button_4">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>470</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="QPushButton" name="safety_button_5">
+    <property name="enabled">
+     <bool>false</bool>
+    </property>
+    <property name="geometry">
+     <rect>
+      <x>710</x>
+      <y>620</y>
+      <width>131</width>
+      <height>121</height>
+     </rect>
+    </property>
+    <property name="text">
+     <string/>
+    </property>
+    <property name="flat">
+     <bool>true</bool>
+    </property>
+   </widget>
+   <widget class="Line" name="line_5">
+    <property name="geometry">
+     <rect>
+      <x>7</x>
+      <y>750</y>
+      <width>841</width>
+      <height>20</height>
+     </rect>
+    </property>
+    <property name="orientation">
+     <enum>Qt::Horizontal</enum>
+    </property>
+   </widget>
+   <zorder>gameView</zorder>
+   <zorder>dist_button_2</zorder>
+   <zorder>dist_button_1</zorder>
+   <zorder>readyButton</zorder>
+   <zorder>handLabel</zorder>
+   <zorder>player_5</zorder>
+   <zorder>line</zorder>
+   <zorder>line_2</zorder>
+   <zorder>line_3</zorder>
+   <zorder>line_4</zorder>
+   <zorder>player_4</zorder>
+   <zorder>player_3</zorder>
+   <zorder>player_2</zorder>
+   <zorder>player_1</zorder>
+   <zorder>drawButton</zorder>
+   <zorder>dist_button_3</zorder>
+   <zorder>dist_button_4</zorder>
+   <zorder>dist_button_5</zorder>
+   <zorder>miles_traveled_1</zorder>
+   <zorder>miles_traveled_2</zorder>
+   <zorder>miles_traveled_3</zorder>
+   <zorder>miles_traveled_4</zorder>
+   <zorder>miles_traveled_5</zorder>
+   <zorder>drawLabel</zorder>
+   <zorder>safety_button_1</zorder>
+   <zorder>safety_button_2</zorder>
+   <zorder>safety_button_3</zorder>
+   <zorder>safety_button_4</zorder>
+   <zorder>safety_button_5</zorder>
+   <zorder>line_5</zorder>
+  </widget>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <resources/>
+ <connections/>
+</ui>
